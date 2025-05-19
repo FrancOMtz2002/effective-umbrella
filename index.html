@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Menú VR</title>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-entity camera look-controls wasd-controls position="0 1.6 0"></a-entity>
+      <a-entity laser-controls="hand: right"></a-entity>
+
+      <a-box position="-6 1 -3" color="#4CC3D9"
+             onclick="location.href='scenes/video-scene.html?video=video1.mp4'">
+        <a-text value="ANSIEDAD" position="0 0.6 0" align="center" color="#000000"></a-text>
+      </a-box>
+
+      <a-box position="-3 1 -3" color="#4CC3D9"
+             onclick="location.href='scenes/video-scene.html?video=video2.mp4'">
+        <a-text value="DEPRESION" position="0 0.6 0" align="center" color="#000000"></a-text>
+      </a-box>
+
+      <a-box position="0 1 -3" color="#4CC3D9"
+             onclick="location.href='scenes/video-scene.html?video=video3.mp4'">
+        <a-text value="¿QUIENES SOMOS?" position="0 0.6 0" align="center" color="#000000"></a-text>
+      </a-box>
+
+      <a-box position="3 1 -3" color="#4CC3D9"
+             onclick="location.href='scenes/video-scene.html?video=video4.mp4'">
+        <a-text value="EFECTO DE DROGAS" position="0 0.6 0" align="center" color="#000000"></a-text>
+      </a-box>
+
+      <a-box position="6 1 -3" color="#4CC3D9"
+             onclick="location.href='scenes/video-scene.html?video=video5.mp4'">
+        <a-text value="AUTISMO" position="0 0.6 0" align="center" color="#000000"></a-text>
+      </a-box>
+    </a-scene>
+  </body>
+</html>
